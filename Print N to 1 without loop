@@ -1,1 +1,7 @@
+class Solution:
+    def printNos(self, n):
+        if n == 0:   # base case
+            return
+        print(n, end=" ")
+        self.printNos(n - 1)
 
