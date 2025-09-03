@@ -1,0 +1,7 @@
+class Solution:
+    def SumofDigits(self, A, B):
+        if A == 0:
+            return 0
+        # compute A^B mod 9 using modular exponentiation
+        val = pow(A, B, 9)
+        return 9 if val == 0 else val
