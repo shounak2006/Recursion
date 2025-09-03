@@ -1,5 +1,7 @@
 class Solution:
     def towerOfHanoi(self, n, fromm, to, aux):
-        if n == 0:
-            return 0
-        return (1 << n) - 1   # same as 2**n - 1
+        
+        if n == 0 :
+            return 0 
+        else:
+            return 2**n - 1
